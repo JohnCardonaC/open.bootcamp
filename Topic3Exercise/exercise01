@@ -1,1 +1,25 @@
 
+package com.john_cardona;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+       suma sumarNumeros = new suma();
+       sumarNumeros.SumNumbers();
+       System.out.println("La suma de los 3 número es: "+  sumarNumeros.resultado);
+
+    }
+
+}
+
+class suma {
+    public int num1 = 20;
+    public int num2 = 15;
+    public int num3 = 5;
+    public int resultado;
+
+    public void SumNumbers() {
+        this.resultado = num1 + num2 + num3;
+    }
+}
